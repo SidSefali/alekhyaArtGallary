@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alekhya Studio Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta -->
+<meta name="title" content="Alekhya Studio Art Gallery | Fine Art & Live Auctions">
+<meta name="description" content="Explore exclusive artworks, live auctions, exhibitions and fine art collections at Alekhya Studio Art Gallery.">
+<meta name="keywords" content="Art Gallery, Fine Art, Live Auctions, Paintings, Alekhya Studio">
+<meta name="author" content="Alekhya Studio Art Gallery">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alekhya Studio Art Gallery">
+<meta property="og:description" content="Discover timeless artworks and participate in exclusive live auctions.">
+<meta property="og:image" content="https://alekhyaStudio.art/assets/images/motherLove.jpeg">
+<meta property="og:url" content="https://alekhyaStudio.art">
+<meta property="og:site_name" content="Alekhya Studio Art Gallery">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alekhya Studio Art Gallery">
+<meta name="twitter:description" content="Fine art collections & live auctions">
+<meta name="twitter:image" content="https://alekhyaStudio.art/assets/images/motherLove.jpeg">
+
+<!-- Canonical -->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="canonical" href="https://alekhyaStudio.art">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Alekhya Studio Art Gallery</div>
+        <!-- <h1>Alekhya Studio Art Gallery</h1> -->
+        <nav>
+            <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="cart.html" class="cart-link">
+              🛒 Cart
+              <span id="cartBadge" class="cart-badge">0</span>
+          </a>
+          <a href="events.html" id="eventHeaderLink">Event</a>
+          <button onclick="clearUser(); location.href='index.html'">
+              Logout
+            </button>
+        </nav>
+        <span id="username"></span>
+      </header>
+
+    <h2>Live Auction</h2>
+    <div id="timer"></div>
+    <div id="currentBid"></div>
+    <input id="bidAmount" type="number" />
+    <button onclick="placeBid()">Place Bid</button>
+    
+
+    <footer>
+        <div class="footer-cols">
+      
+          <!-- COLUMN 1 -->
+          <div>
+            <h4>About Alekhya Studio</h4>
+            <p>
+              Alekhya Studio Art Gallery showcases fine art, live auctions,
+              exhibitions and curated collections.
+            </p>
+          </div>
+      
+          <!-- COLUMN 2 -->
+          <div>
+            <h4>Explore</h4>
+            <a href="gallery.html">Gallery</a>
+            <a href="#">Auctions</a>
+            <a href="#">Upcoming Events</a>
+            <a href="#">Blogs & Videos</a>
+          </div>
+      
+          <!-- COLUMN 3 -->
+          <div>
+            <h4>Connect</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+          </div>
+    
+          <div>
+            <h4>DOWNLOAD THE APP</h4>
+            <div class="app-links">
+    
+              <!-- Google Play -->
+              <a href="https://play.google.com/store" target="_blank" rel="noopener">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                     alt="Get it on Google Play" style="width:160px;">
+              </a>
+              <!-- App Store -->
+              <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="Download on the App Store" style="width:160px;">
+              </a>
+            </div>
+          </div>
+    
+          <div class="footer-social">
+            <h4>FOLLOW US ON</h4>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+          
+              <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+          
+              <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+          
+              <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+          
+              <a href="https://www.threads.net/" target="_blank" aria-label="Threads">
+                <i class="fab fa-threads"></i>
+              </a>
+          
+              <a href="https://twitter.com/" target="_blank" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <p class="copyright">
+          © 2026 Alekhya Studio Art Gallery. All Rights Reserved.
+        </p>
+      </footer>
+
+    <script src="js/session.js"></script>
+    <script src="js/auction.js"></script>
+    
+</body>
+</html>
+

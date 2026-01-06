@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title> Art Gallery | Alekhya Studio </title>
+  <title>Alekhya Studio Art Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- SEO Meta -->
 <meta name="title" content="Alekhya Studio Art Gallery | Fine Art & Live Auctions">
@@ -28,39 +28,38 @@
 <!-- Canonical -->
 <link rel="stylesheet" href="css/style.css" />
 <link rel="canonical" href="https://alekhyaStudio.art">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
 </head>
 
 <body>
 
-<header class="header">
-  <div class="logo">Alekhya Studio Art Gallery</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cart.html" class="cart-link">
-        🛒 Cart
-        <span id="cartBadge" class="cart-badge">0</span>
-    </a>
-    <a href="events.html" id="eventHeaderLink">Event</a>
-    <a href="auction.html">Auction</a>
-    <button onclick="clearUser(); location.href='index.html'">
-        Logout
-      </button>
-  </nav>
-  <span id="username"></span>
-</header>
+  <header class="header">
+    <div class="logo">Alekhya Studio Art Gallery</div>
+    <!-- <h1>Alekhya Studio Art Gallery</h1> -->
+    <nav>
+        <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="cart.html" class="cart-link">
+          🛒 Cart
+          <span id="cartBadge" class="cart-badge">0</span>
+      </a>
+      <a href="auction.html">Auction</a>
+      <button onclick="clearUser(); location.href='index.html'">
+          Logout
+        </button>
+    </nav>
+    <span id="username"></span>
+  </header>
 
-
-<section class="gallery-section">
-  <h1 class="section-title">Explore Our Collection</h1>
-  <p class="section-subtitle">
-    Each painting tells a story — discover the one that speaks to you
-  </p>
-
-  <div id="gallery" class="gallery-grid"></div>
-</section>
-
-<!-- Font Awesome for social icons -->
+<h2>Upcoming Events</h2>
+<ul>
+  <li>Spring Modern Art Auction — April 2026</li>
+  <li>Contemporary Masters Evening Sale — May 2026</li>
+</ul>
 
 <footer>
   <div class="footer-cols">
@@ -142,14 +141,6 @@
     © 2026 Alekhya Studio Art Gallery. All Rights Reserved.
   </p>
 </footer>
-
-
-<script src="js/data.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/session.js"></script>
-<script src="js/cart-utils.js"></script>
-<script src="js/app.js"></script>
-
 
 </body>
 </html>

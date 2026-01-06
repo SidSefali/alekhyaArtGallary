@@ -1,46 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Alekhya Art Gallery</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Alekhya Studio Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO Meta -->
+<meta name="title" content="Alekhya Studio Art Gallery | Fine Art & Live Auctions">
+<meta name="description" content="Explore exclusive artworks, live auctions, exhibitions and fine art collections at Alekhya Studio Art Gallery.">
+<meta name="keywords" content="Art Gallery, Fine Art, Live Auctions, Paintings, Alekhya Studio">
+<meta name="author" content="Alekhya Studio Art Gallery">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alekhya Studio Art Gallery">
+<meta property="og:description" content="Discover timeless artworks and participate in exclusive live auctions.">
+<meta property="og:image" content="https://alekhyaStudio.art/assets/images/motherLove.jpeg">
+<meta property="og:url" content="https://alekhyaStudio.art">
+<meta property="og:site_name" content="Alekhya Studio Art Gallery">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alekhya Studio Art Gallery">
+<meta name="twitter:description" content="Fine art collections & live auctions">
+<meta name="twitter:image" content="https://alekhyaStudio.art/assets/images/motherLove.jpeg">
+
+<!-- Canonical -->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="canonical" href="https://alekhyaStudio.art">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
 </head>
+
+<!-- ================= HEADER ================= -->
+ 
 <body>
 
-<nav>
-  <h2>Alekhya Art Gallery</h2>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="artist.html">Artist</a>
-    <a href="exhibition.html">Exhibitions</a>
-    <a href="contact.html">Contact</a>
+ <div id="mainContent">
+
+      <header class="header">
+        <div class="logo">Alekhya Studio Art Gallery</div>
+        <!-- <h1>Alekhya Studio Art Gallery</h1> -->
+        <nav>
+          <a href="gallery.html">Gallery</a>
+          <a href="cart.html" class="cart-link">
+              🛒 Cart
+              <span id="cartBadge" class="cart-badge">0</span>
+          </a>
+       
+          <a href="events.html" id="eventHeaderLink">Event</a>
+          <a href="auction.html">Auction</a>
+          <a href="admin.html">Author</a>
+
+          <button onclick="clearUser(); location.href='index.html'">
+              Logout
+            </button>
+        </nav>
+        <span id="username"></span>
+      </header>
+  
+  <!-- ================= HERO SLIDER ================= -->
+    <section class="hero">
+      <div class="carousel" id="slider">
+        <img src="assets/images/motherLove.jpeg" class="carousel-img active">
+        <img src="assets/images/redHorse.jpeg" class="carousel-img">
+        <img src="assets/images/greenHorse.jpeg" class="carousel-img">
+        <!--<button class="view-btns">View Details</button> -->
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+  <!-- ================= UPCOMING EVENTS ================= -->
+  <section class="section">
+    <h2>Upcoming Events</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/greenHorse.jpeg">
+        <h3>Modern Art Exhibition</h3>
+        <button>View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= UPCOMING AUCTIONS ================= -->
+
+  <section class="section light">
+    <h2>Upcoming Auctions</h2>
+
+    <div class="cards">
+      <div class="card auction-card">
+        <img src="assets/images/redHorse.jpeg" />
+        <h3>Exclusive Canvas Auction</h3>
+
+        <div class="countdown" data-endtime="2026-01-10T18:00:00">
+          <span><b class="days">00</b> Days</span>
+          <span><b class="hours">00</b> Hrs</span>
+          <span><b class="minutes">00</b> Min</span>
+          <span><b class="seconds">00</b> Sec</span>
+        </div>
+
+        <button>Participate</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOGS & VIDEOS ================= -->
+  <section class="section">
+    <h2>Blogs & Videos</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/images/motherLove.jpeg">
+        <h3>Behind the Art</h3>
+        <button>Read More</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <div class="footer-cols">
+  
+      <!-- COLUMN 1 -->
+      <div>
+        <h4>About Alekhya Studio</h4>
+        <p>
+          Alekhya Studio Art Gallery showcases fine art, live auctions,
+          exhibitions and curated collections.
+        </p>
+      </div>
+  
+      <!-- COLUMN 2 -->
+      <div>
+        <h4>Explore</h4>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Auctions</a>
+        <a href="#">Upcoming Events</a>
+        <a href="#">Blogs & Videos</a>
+      </div>
+  
+      <!-- COLUMN 3 -->
+      <div>
+        <h4>Connect</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+
+      <div>
+        <h4>DOWNLOAD THE APP</h4>
+        <div class="app-links">
+
+          <!-- Google Play -->
+          <a href="https://play.google.com/store" target="_blank" rel="noopener">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                 alt="Get it on Google Play" style="width:160px;">
+          </a>
+          <!-- App Store -->
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store" style="width:160px;">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <h4>FOLLOW US ON</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+      
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+      
+          <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+      
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+      
+          <a href="https://www.threads.net/" target="_blank" aria-label="Threads">
+            <i class="fab fa-threads"></i>
+          </a>
+      
+          <a href="https://twitter.com/" target="_blank" aria-label="X">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <p class="copyright">
+      © 2026 Alekhya Studio Art Gallery. All Rights Reserved.
+    </p>
+  </footer>
+
+
   </div>
-</nav>
-
-<header class="hero">
-  <h1>Original Fine Art from Alekhya</h1>
-  <p>Authentic • Handcrafted • Limited Editions</p>
-</header>
-
-<section class="highlight">
-  <h2>Featured Artwork</h2>
-  <div class="art-card">
-    <img src="images/art1.jpg">
-    <h3>Golden Silence</h3>
-    <p>₹8,000</p>
-    <a href="https://rzp.io/l/YOUR_LINK" target="_blank">
-      <button>Buy Now</button>
-    </a>
-  </div>
-</section>
-
-<footer>© 2026 Alekhya Art Gallery</footer>
-
-<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX" target="_blank">
-Chat on WhatsApp
-</a>
-
+     <div id="userPopup" class="popup" style="display:none">
+        <div class="popup-box popup-split">
+    
+          <div class="popup-left">
+            <div class="carousel">
+              <img class="carousel-img active"
+                   src="assets/images/motherLove.jpeg"
+                   alt="Mother Love">
+          
+              <img class="carousel-img"
+                   src="assets/images/redHorse.jpeg"
+                   alt="Abstract Dream">
+          
+              <img class="carousel-img"
+                   src="assets/images/greenHorse.jpeg"
+                   alt="Golden Horizon">
+            </div>
+          
+            <h3>Alekhya Studio</h3>
+            <p>Where stories meet colors 🎨</p>
+          </div>
+      
+          <div class="popup-right">
+            <h2>Welcome to Alekhya Studio Art Gallery</h2>
+      
+            <input id="fname" placeholder="First Name">
+            <input id="lname" placeholder="Last Name">
+      
+            <div class="remember-row">
+              <label for="rememberMe">Remember Me</label>
+              <input type="checkbox" id="rememberMe" />
+            </div>
+      
+            <button class="enter-btn" onclick="saveUser()">
+              Enter Gallery
+            </button>
+             <!-- ADMIN ACCESS -->
+            <div class="admin-login-link">
+            <a href="#" onclick="goToAdminLogin()">Author Login</a>
+            </div>
+          </div>
+      
+        </div>
+      </div> 
+      <script src="js/session.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/admin.js"></script>
+      <script src="js/cart-utils.js"></script>
 </body>
 </html>
+
